@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
-import com.victordev.encuesta.models.requests.responses.ValidationErrors;
+import com.victordev.encuesta.models.responses.ValidationErrors;
 
 @ControllerAdvice
 public class AppExceptionHandler {

@@ -1,4 +1,4 @@
-package com.victordev.encuesta.models.requests.responses;
+package com.victordev.encuesta.models.responses;
 
 import lombok.Data;
 

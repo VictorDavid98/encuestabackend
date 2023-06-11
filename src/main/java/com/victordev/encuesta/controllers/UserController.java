@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.victordev.encuesta.entities.UserEntity;
 import com.victordev.encuesta.models.requests.UserRegisterRequestModel;
-import com.victordev.encuesta.models.requests.responses.UserRest;
+import com.victordev.encuesta.models.responses.UserRest;
 import com.victordev.encuesta.services.UserService;
 
 
@@ -36,8 +36,10 @@ public class UserController {
 
     @GetMapping
     public UserRest getUser(Authentication authentication) {
-        System.out.println(authentication);
-        return null;
+        UserEntity user = userService.getUser(authentication.getPrincipal().toString());
+        UserRest userRest = new UserRest();
+        BeanUtils.copyProperties(user, userRest);
+        return userRest;
     }
     
     
