@@ -7,7 +7,7 @@ import javax.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-public class UserLoginResquestModel {
+public class UserLoginRequestModel {
     @NotEmpty
     @Email
     private String email;
