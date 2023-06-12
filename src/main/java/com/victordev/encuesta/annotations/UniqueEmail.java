@@ -14,8 +14,8 @@ import com.victordev.encuesta.validators.UniqueEmailValidator;
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface UniqueEmail {
-    String message() default "{encuesta.constraints.email.unique.mesagge}";
-
+    String message() default "{encuesta.constraints.email.unique.message}";
+    
     Class<?>[] groups() default {};
 
     Class<? extends Payload>[] payload() default {};
