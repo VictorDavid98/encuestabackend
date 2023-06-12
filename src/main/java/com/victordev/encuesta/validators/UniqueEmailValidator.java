@@ -4,7 +4,7 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+
 
 import com.victordev.encuesta.annotations.UniqueEmail;
 import com.victordev.encuesta.entities.UserEntity;
