@@ -12,6 +12,7 @@ public class EncuestaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EncuestaApplication.class, args);
+		System.out.println("funcionando");
 	}
 
 	@Bean
